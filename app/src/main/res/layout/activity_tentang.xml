@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="10dp">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nama_hal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tentang Aplikasi"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:padding="4dp"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="600px"
+                android:layout_height="600px"
+                android:src="@drawable/apk"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Aplikasi ini bertujuan sebagai media informasi untuk membantu masyarakat dalam mengenal dan mengetahui mengenai koleksi benda-benda sejarah museum di istana siak sri indrapura"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MUSEUM ISTANA\nSIAK SRI INDRAPURA"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logopng"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btn_sejarah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tentang Museum"/>
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan QR Code"/>
+
+            <Button
+                android:id="@+id/btn_panduan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cara Penggunaan"/>
+
+            <Button
+                android:id="@+id/btn_tentang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tentang Aplikasi"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
